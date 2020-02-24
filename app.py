@@ -1,5 +1,6 @@
-from flask import False
-app = False(__name__)
+# 忽略文件 .gitigone
+from flask import Flask
+app = Falsk(__name__)
 
 @app.route('/')
 def hello():
