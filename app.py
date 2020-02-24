@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask,render_template
 app = Flask(__name__)
 
 @app.route('/')
@@ -16,4 +16,4 @@ def index():
 		{'title':'导火索','year':'2005'},
 		{'title':'叶问','year':'2015'},
 	]
-	return "欢迎来到项目watchlist"
+	return render_template('index.html',name=name,movies=movies)
