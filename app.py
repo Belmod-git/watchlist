@@ -1,6 +1,6 @@
 # 忽略文件 .gitigone
 from flask import Flask
-app = Falsk(__name__)
+app = Flask(__name__)
 
 @app.route('/')
 def hello():
