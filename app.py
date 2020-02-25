@@ -112,7 +112,6 @@ def edit(movie_id):
 @app.route('/movie/delete/<int:movie_id>',methods=['POST'])
 
 def delete(movie_id):
-	print(111)
 	movie = Movie.query.get_or_404(movie_id)
 	db.session.delete(movie)
 	db.session.commit()
