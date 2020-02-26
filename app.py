@@ -5,6 +5,9 @@ import click
 from flask import Flask,render_template,request,url_for,redirect,flash
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column,Integer,String
+from werkzeug.security import generate_password_hash,check_password_hash
+from flask_login import LoginManager,UserMixin,login_user,logout_user,login_required,current_user
+
 app = Flask(__name__)
 
 WIN = sys.platform.startswith('win')
@@ -21,17 +24,22 @@ app.config['SECRET_KEY'] = 'dev'
 db = SQLAlchemy(app)
 
 # 创建数据库模型类
-class User(db.Model):
+class User(db.Model,UserMixin):
     id = Column(Integer,primary_key=True) # 主键
     name = Column(String(20))
+    username = Column(String(20))   # 用户名
+    password_hash = Column(String(128)) #密码散列值
+
+    def set_password(self,password):
+        self.password_hash = generate_password_hash(password)
+    def validate_password(self,password):
+        return check_password_hash(self.password_hash,password)
 
 
 class Movie(db.Model):
     id = Column(Integer,primary_key=True) # 主键
     title = Column(String(60))
     year = Column(String(4))
-
-
 
 
 @app.cli.command()
@@ -67,10 +75,45 @@ def forge():
 	db.session.commit()
 	click.echo('数据导入完成')
 
+# 生成admin账号的函数
+@app.cli.command()
+@click.option('--username', prompt=True, help="用来登录的用户名")
+@click.option('--password', prompt=True, hide_input=True, confirmation_prompt=True, help="用来登录的密码")
+def admin(username, password):
+	db.create_all()
+	user = User.query.first()
+	if user is not None:
+		click.echo('更新用户')
+		user.username = username
+		user.set_password(password)
+	else:
+		click.echo('创建用户')
+		user = User(username=username, name="Admin")
+		user.set_password(password)
+		db.session.add(user)
+
+	db.session.commit()
+	click.echo('创建管理员账号完成')
+
+
+# 登录
+Login_manager = LoginManager(app)# 实例化扩展类
+@Login_manager.user_loader
+def load_user(user_id):		# 创建用户加载回调函数，接受用户id作为参数
+	user = User.query.get(int(user_id))
+	return user
+
+
+# 设置
+# LoginManager.login_view = 'login'
+
+
 # 首页
 @app.route('/',methods=['GET','POST'])
 def index():
 	if request.method == 'POST':
+		if not current_user.is_authenticated:
+			return redirect(url_for('index'))
 		# 获取表单数据
 		title = request.form.get('title')
 		year = request.form.get('year')
@@ -91,6 +134,7 @@ def index():
 
 # 编辑电影信息页面
 @app.route('/movie/edit/<int:movie_id>',methods=['GET','POST'])
+@login_required
 def edit(movie_id):
 	movie = Movie.query.get_or_404(movie_id)
 
@@ -108,9 +152,27 @@ def edit(movie_id):
 		return redirect(url_for('index'))
 	return render_template('edit.html',movie=movie)
 
+
+@app.route('/settings',methods=['GET','POST'])
+@login_required
+def settings():
+	if request.method == 'POST':
+		name = request.form['name']
+
+		if not name or len(name)>20:
+			flash('输入错误')
+			return redirect(url_for('settings'))
+
+		current_user.name = name
+		db.session.commit()
+		flash('设置name成功')
+		return redirect(url_for('index'))
+
+	return render_template('settings.html')
+
 # 删除信息
 @app.route('/movie/delete/<int:movie_id>',methods=['POST'])
-
+@login_required
 def delete(movie_id):
 	movie = Movie.query.get_or_404(movie_id)
 	db.session.delete(movie)
@@ -119,12 +181,43 @@ def delete(movie_id):
 	return redirect(url_for('index'))
 
 
+# 用户登录flask提供的login_user()函数
+@app.route('/login',methods=['GET','POST'])
+def login():
+	if request.method == 'POST':
+		username = request.form['username']
+		password = request.form['password']
+
+		if not username or not password:
+			flash('输入错误')
+			return redirect(url_for('login'))
+		user = User.query.first()
+		if username == user.username and user.validate_password(password):
+			login_user(user)  # 登录用户
+			flash('登录成功')
+			return redirect(url_for('index'))   # 登录成功返回首页
+		flash('用户名或密码出入错误')
+		return redirect(url_for('login'))
+	return render_template('login.html')
+
+
+# 用户登出
+@app.route('/logout')
+def logout():
+	logout_user()
+	flash('退出登录')
+	return redirect(url_for('index'))
+
+
 @app.errorhandler(404)  # 传入要处理的错误代码
 def page_not_found(e):
 	return render_template('404.html'),404
+
 
 @app.context_processor  # 模板上下文处理函数
 def inject_user():
 	user = User.query.first()
 	return dict(user=user)
+
+
 
