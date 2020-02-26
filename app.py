@@ -97,16 +97,16 @@ def admin(username, password):
 
 
 # 登录
-Login_manager = LoginManager(app)# 实例化扩展类
-@Login_manager.user_loader
+login_manager = LoginManager(app)# 实例化扩展类
+@login_manager.user_loader
 def load_user(user_id):		# 创建用户加载回调函数，接受用户id作为参数
 	user = User.query.get(int(user_id))
 	return user
 
 
 # 设置
-# LoginManager.login_view = 'login'
-
+login_manager.login_view = 'login'
+login_manager.login_message = "没有登录"
 
 # 首页
 @app.route('/',methods=['GET','POST'])
