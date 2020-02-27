@@ -1,7 +1,7 @@
 import unittest
 
-
-from app import app,db,Movie,User
+from watchlist import app,db
+from watchlist.models import User,Movie
 
 
 class WatchlistTestCase(unittest.TestCase):
@@ -66,14 +66,7 @@ class WatchlistTestCase(unittest.TestCase):
         self.assertIn('删除数据成功',data)
         self.assertEqual(response.status_code,200)
 
-    # 编辑电影
-    def test_update_item(self):
-        self.test_index_page()
-        response = self.client.post('/movie/edit/1',follow_redirects=True)
-        data = response.get_data(as_text=True)
-        self.assertIn('输入错误',data)
-        self.assertIn('电影信息已经更新',data)
-        self.assertEqual(response.status_code,200)
+
 
 
 if __name__ == '__main__':
