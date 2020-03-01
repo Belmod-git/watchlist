@@ -1,6 +1,6 @@
 import click
 from watchlist import app,db
-from watchlist.models import User,Movie
+from watchlist.models import User,Ariticles
 
 
 @app.cli.command()
@@ -17,21 +17,13 @@ def forge():
 	db.create_all()
 	name = "Bel"
 	movies = [
-		{'title':'杀破狼','year':'2003'},
-		{'title':'扫毒','year':'2018'},
-		{'title':'捉妖记','year':'2016'},
-		{'title':'囧妈','year':'2020'},
-		{'title':'葫芦娃','year':'1989'},
-		{'title':'玻璃盒子','year':'2020'},
-		{'title':'调酒师','year':'2020'},
-		{'title':'釜山行','year':'2017'},
-		{'title':'导火索','year':'2005'},
-		{'title':'叶问','year':'2015'},
+		{'title':'杀破狼','content':'正经八百看看揭不开锅','author':'Belmod','pubdate':'2020_02_29 12:52:09.337867'},
+		{'title': '小鬼当家', 'content': '正经八百看看揭不开锅', 'author': 'zhangsan', 'pubdate': '2020_02_29 12:52:09.337867'},
 	]
 	user = User(name=name)
 	db.session.add(user)
 	for m in movies:
-		movie = Movie(title=m['title'],year=m['year'])
+		movie = Ariticles(title=m['title'],content=m['content'],author=m['author'],pubdate=m['pubdate'])
 		db.session.add(movie)
 	db.session.commit()
 	click.echo('数据导入完成')

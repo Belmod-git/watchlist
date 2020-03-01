@@ -2,6 +2,7 @@ from watchlist import db
 from werkzeug.security import generate_password_hash,check_password_hash
 from flask_login import UserMixin
 from sqlalchemy import Column,Integer,String
+import datetime
 
 class User(db.Model,UserMixin):
     id = Column(Integer,primary_key=True) # 主键
@@ -15,7 +16,9 @@ class User(db.Model,UserMixin):
         return check_password_hash(self.password_hash,password)
 
 
-class Movie(db.Model):
+class Ariticles(db.Model):
     id = Column(Integer,primary_key=True) # 主键
     title = Column(String(60))
-    year = Column(String(4))
+    content = Column(String(1000))
+    author = Column(String(20))
+    pubdate = Column(db.DateTime, default=datetime.datetime.now, onupdate=datetime.datetime.now)

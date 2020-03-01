@@ -1,9 +1,9 @@
-body{
-    max-width: 600px;
-    margin: auto;
-    font-size:14px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+/*body{*/
+    /*max-width: 1000px;*/
+    /*margin: auto;*/
+    /*font-size:14px;*/
+    /*font-family: Arial, Helvetica, sans-serif;*/
+/*}*/
 /* 页脚 footer */
 footer{
     color: #888888;
@@ -13,7 +13,7 @@ footer{
 }
 /* 头像 */
 .avatar{
-    width: 40px;
+    width: 120px;
 }
 
 /* 电影列表 */
@@ -40,20 +40,20 @@ nav ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: #333333
+    background: lightslategrey;
 }
 nav li {
-    float: left;
+    float: right;
 }
 nav li a{
-    display: block;
-    color: white;
+    /*display: block;*/
+    color: black;
     text-align: center;
     padding: 8px 12px;
     text-decoration: none
 }
 nav li a:hover{
-    background: #111111
+    background: #30799B;
 }
 .float-right{
     float: right;
