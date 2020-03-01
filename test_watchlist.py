@@ -1,7 +1,7 @@
 import unittest
 
 from watchlist import app,db
-from watchlist.models import User,Movie
+from watchlist.models import User,Ariticles
 
 
 class WatchlistTestCase(unittest.TestCase):
@@ -16,7 +16,7 @@ class WatchlistTestCase(unittest.TestCase):
         # 创建测试数据，一个用户，一个电影信息
         user = User(name='Test',username='test')
         user.set_password('123456')
-        movie = Movie(title='测试电影名称',year='2020')
+        movie = Ariticles(title='请问',content='请问')
         db.session.add_all([user,movie])
         db.session.commit()
 
@@ -47,8 +47,8 @@ class WatchlistTestCase(unittest.TestCase):
     def test_index_page(self):
         response = self.client.get('/')
         data = response.get_data(as_text=True)
-        self.assertIn("Test\'s WatchList",data)
-        self.assertIn('测试电影名称',data)
+        self.assertIn("Test的博客",data)
+        self.assertIn('博文网站',data)
         self.assertEqual(response.status_code,200)
 
     # 登录   (辅助删除，编辑，添加这些功能函数)

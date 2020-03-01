@@ -2,83 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cec1c541-7382-4d4f-99d9-fa327fb331ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/bootstrap-3.3.7-dist/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/bdmap/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/codesample/css/prism.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-cool.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-cry.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-embarassed.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-frown.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-innocent.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-kiss.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-laughing.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-sealed.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-smile.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-surprised.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-undecided.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-wink.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/emoticons/img/smiley-yell.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/help/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/imageupload/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/indent2em/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/lineheight/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/plugins/visualblocks/css/visualblocks.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/content.inline.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/content.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/content.mobile.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/fonts/tinymce-mobile.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/fonts/tinymce-small.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/fonts/tinymce-small.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/fonts/tinymce-small.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/fonts/tinymce-small.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/fonts/tinymce.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/fonts/tinymce.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/fonts/tinymce.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/fonts/tinymce.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/img/anchor.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/img/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/img/object.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/img/trans.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/skin.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/skin.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/skin.mobile.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/skins/lightgray/skin.mobile.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/tinymce.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/static/tinymce/zh_CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/templates/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/watchlist/templates/text.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/data.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/watchlist/commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/commands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/watchlist/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/watchlist/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/watchlist/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/watchlist/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/templates/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/watchlist/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/watchlist/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_watchlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_watchlist.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,13 +26,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/watchlist/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
               <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
               <folding>
                 <element signature="e#1#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitigone">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_watchlist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -208,10 +153,8 @@
         <option value="$PROJECT_DIR$/watchlist/templates/commands.py" />
         <option value="$PROJECT_DIR$/.flaskenv" />
         <option value="$PROJECT_DIR$/watchlist/error.py" />
-        <option value="$PROJECT_DIR$/.gitigone" />
         <option value="$PROJECT_DIR$/wsgi.py" />
         <option value="$PROJECT_DIR$/watchlists/models.py" />
-        <option value="$PROJECT_DIR$/test_watchlist.py" />
         <option value="$PROJECT_DIR$/watchlist/static/style.css" />
         <option value="$PROJECT_DIR$/watchlist/static/ueditor/index.html" />
         <option value="$PROJECT_DIR$/watchlist/models.py" />
@@ -224,10 +167,12 @@
         <option value="$PROJECT_DIR$/watchlist/templates/add.html" />
         <option value="$PROJECT_DIR$/watchlist/templates/index.html" />
         <option value="$PROJECT_DIR$/watchlist/views.py" />
+        <option value="$PROJECT_DIR$/.gitigone" />
+        <option value="$PROJECT_DIR$/test_watchlist.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1050" />
@@ -354,12 +299,12 @@
       <workItem from="1582847184357" duration="29786000" />
       <workItem from="1582946746818" duration="27007000" />
       <workItem from="1582979075232" duration="1914000" />
-      <workItem from="1583032035373" duration="8488000" />
+      <workItem from="1583032035373" duration="10248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139662000" />
+    <option name="totallyTimeSpent" value="141422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="781" height="840" extended-state="0" />
@@ -379,7 +324,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.6791148" side_tool="true" weight="0.46637428" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.3208852" visible="true" weight="0.19883041" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.3208852" visible="true" weight="0.2748538" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -398,13 +343,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/aettings.html" />
     <entry file="file://$PROJECT_DIR$/watchlist/templates/commands.py" />
-    <entry file="file://$PROJECT_DIR$/.gitigone">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -413,16 +351,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_watchlist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -599,6 +527,23 @@
           <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
           <folding>
             <element signature="e#1#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitigone">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_watchlist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
